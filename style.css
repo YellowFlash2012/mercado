@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Nunito&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans';
+}
+
+/* ********HEADER********** */
+
+nav {
+    border-bottom: 1px solid #666;
+    
+}
+.navbar-brand {
+    font-weight: bolder;
+    margin-right: 5rem;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-item {
+    
+}
+
+.avatar-img {
+    width: 25px;
+    height: 25px;
+}
