@@ -76,3 +76,12 @@ nav {
     cursor: pointer;
     font-size: 20px;
 }
+
+/* MEDIA QUERY */
+@media screen and (max-width:990px) {
+
+    .thumbs img {
+        width: 2rem;
+        height: 2rem;
+    }
+}
