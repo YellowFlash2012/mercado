@@ -34,3 +34,45 @@ nav {
     width: 25px;
     height: 25px;
 }
+
+/* ************MAIN************** */
+
+
+.main-visual {
+    border-radius: 10px;
+}
+
+.product-img {
+    border-radius: 5px;
+}
+
+.thumbs {
+    width: 70px;
+    height: 70px;
+}
+
+.thumbs img {
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+.discount {
+    padding: 0.1rem 0.3rem;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+.qty-container {
+    padding: 0.5rem 1.5rem;
+    background: hsl(223, 64%, 98%);
+    border-radius: 5px;
+}
+
+.qty-container i {
+    cursor: pointer;
+    font-size: 20px;
+}
