@@ -60,6 +60,7 @@
                                     <a class="nav-link" href="#">Contact</a>
                                 </div>
                                 <div class="cart-item d-flex">
+                                    
                                     <a class="nav-link me-3" href="#">
                                         <img
                                             src="assets/images/icon-cart.svg"
@@ -81,13 +82,16 @@
                 </nav>
             </header>
 
-            <main class="row mt-5">
-                <div class="visuals col-4 me-5">
+            <main class="mt-5 mb-5">
+                <div class="visuals me-5">
                     <div class="main-visual">
-                      <img src="assets/images/image-product-1.jpg" class="w-100 product-img" alt="">
+                      <img src="assets/images/image-product-1.jpg" class="w-100 main-img" alt="">
+                      <img src="assets/images/image-product-2.jpg" class="w-100 product-img" alt="">
+                      <img src="assets/images/image-product-3.jpg" class="w-100 product-img" alt="">
+                      <img src="assets/images/image-product-4.jpg" class="w-100 product-img" alt="">
                     </div>
 
-                    <div class="thumbs d-flex mt-3">
+                    <div class="thumbs d-flex justify-content-between mt-3">
                       <img src="assets/images/image-product-1-thumbnail.jpg" alt="" class="thumb active">
                       <img src="assets/images/image-product-2-thumbnail.jpg" alt="" class="thumb ms-4 me-4">
                       <img src="assets/images/image-product-3-thumbnail.jpg" alt="" class="thumb">
@@ -95,7 +99,7 @@
                     </div>
                 </div>
 
-                <div class="product-details col-6 pt-5 pb-5">
+                <div class="product-details pt-5 pb-5">
                     <h6 style="color: hsl(26, 100%, 55%);">Sneaker Company</h6>
 
                     <h1>Fall Limited Edition Sneakers</h1>
@@ -115,7 +119,11 @@
                                 <i class="bi bi-plus" style="color: hsl(26, 100%, 55%); font-weight: bolder;" id="plus"></i>
                             </div>
 
-                            <button class="btn ps-5 pe-5" style="background: hsl(26, 100%, 55%); color: #fff; font-weight: bolder;">
+                            <button 
+                            class="btn ps-5 pe-5" style="background: hsl(26, 100%, 55%); color: #fff; font-weight: bolder;"
+                            id="liveToastBtn"
+                            type="button"
+                            >
                                 <i class="bi bi-cart3 me-3" style="color: #fff; font-weight: bolder;"></i>
                               
                               Add to cart
@@ -126,6 +134,19 @@
 
             <footer></footer>
         </div>
+
+        <!-- toast config -->
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Product added to cart. Thank you!
+    </div>
+  </div>
+</div>
 
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"

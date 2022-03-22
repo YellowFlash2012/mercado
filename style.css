@@ -36,14 +36,39 @@ nav {
 }
 
 /* ************MAIN************** */
+main {
+    display: flex;
+}
 
+.visuals {
+    width: 40%;
+}
+
+.product-details {
+    width: 60%;
+}
 
 .main-visual {
-    border-radius: 10px;
+    position: relative;
+    border: 2px solid #000;
+    top: 0;
+    left: 0;
+}
+
+.main-img {
+    border-radius: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .product-img {
     border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
 }
 
 .thumbs {
