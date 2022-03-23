@@ -26,8 +26,29 @@ nav {
     justify-content: space-between;
 }
 
-.cart-item {
+div.menulinks a:hover {
     
+    border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+
+#cart {
+    position: relative;
+}
+
+#cart:hover .cart-overview {
+    display: block;
+}
+
+div.cart-overview {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    width: 15rem;
+    height: 8rem;
+    left: -6rem;
+    top: 2.5rem;
+
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 2px 2px 5px rgba(94, 104, 121, 0.3);
 }
 
 .avatar-img {
@@ -35,6 +56,33 @@ nav {
     height: 25px;
 }
 
+#avatar {
+    position: relative;
+}
+
+#avatar:hover div.avatar-overview ul {
+    display: block;
+}
+
+div.avatar-overview ul {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    width: 10rem;
+    height: 8rem;
+    left: -2rem;
+    top: 2.5rem;
+
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.5), 2px 2px 5px rgba(94, 104, 121, 0.3);
+
+    list-style-type: none;
+}
+
+div.avatar-overview li {
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem 0;
+}
 /* ************MAIN************** */
 main {
     display: flex;
@@ -50,7 +98,7 @@ main {
 
 .main-visual {
     position: relative;
-    border: 2px solid #000;
+    
     top: 0;
     left: 0;
 }
@@ -81,8 +129,13 @@ main {
     cursor: pointer;
 }
 
+.thumbs img:hover {
+    opacity: 0.6;
+}
+
 .active {
     opacity: 0.5;
+    border: 3px solid hsl(26, 100%, 55%);
 }
 
 .discount {
@@ -100,6 +153,10 @@ main {
 .qty-container i {
     cursor: pointer;
     font-size: 20px;
+}
+
+button:hover {
+    opacity: 0.3;
 }
 
 /* MEDIA QUERY */
