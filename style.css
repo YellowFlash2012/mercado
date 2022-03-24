@@ -94,6 +94,7 @@ main {
 
 .product-details {
     width: 60%;
+    margin-top: 2rem;
 }
 
 .main-visual {
@@ -165,5 +166,85 @@ button:hover {
     .thumbs img {
         width: 2rem;
         height: 2rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .menulinks {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+
+    .cart-overview, 
+    .avatar-overview ul {
+        z-index: 5;
+    }
+
+    main {
+        flex-direction: column;
+        
+        align-items: center;
+    }
+
+    .visuals {
+        width: 100%;
+        margin-left: 2.9rem;
+        margin-bottom: 0;
+        height: 352px;
+        
+    }
+
+    .main-img {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .thumbs {
+        display: none;
+    }
+
+    .thumbs img {
+        display: none;
+    }
+
+    .product-details {
+        
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .product-details h6 {
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .pricing-details {
+        display: flex;
+        margin: 1rem 0;
+        
+    }
+
+    .discount {
+        
+        padding: 0.2rem 0.3rem;
+    }
+
+    .former-price {
+        margin-left: 8rem;
+    }
+
+    div.checkout-stuff {
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+    .qty-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0.5rem;
+
     }
 }
